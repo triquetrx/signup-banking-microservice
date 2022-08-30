@@ -23,14 +23,14 @@ public class SignupController {
 	@Autowired
 	private SignupService service;
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@PostMapping("/signup-request")
 	public ResponseEntity<?> signupRequest(@RequestBody SignupRequestDTO dto) {
 		SignupResponse addnewRequest = service.addnewRequest(dto);
 		return new ResponseEntity<>(addnewRequest,HttpStatus.OK);
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@GetMapping("/view-all-requests")
 	public ResponseEntity<?> signupRequest(@RequestHeader(name="Authorization")String token) {
 		List<SignupRequest> list = service.viewAllList(token);

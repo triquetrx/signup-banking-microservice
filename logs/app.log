@@ -1,0 +1,127 @@
+10:08:57.445 [restartedMain] INFO  c.c.s.SignupMicroserviceApplication - Starting SignupMicroserviceApplication using Java 17.0.1 on LTIN287456 with PID 45820 (C:\Users\2146122\mfpe\signup-microservice\target\classes started by 2146122 in C:\Users\2146122\mfpe\signup-microservice)
+10:08:57.452 [restartedMain] INFO  c.c.s.SignupMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+10:08:57.586 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:08:57.586 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:08:59.120 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:08:59.399 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 262 ms. Found 1 JPA repository interfaces.
+10:08:59.909 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5585211a-ac2c-34c3-acc9-1ad452172dd4
+10:09:01.063 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8006 (http)
+10:09:01.080 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8006"]
+10:09:01.080 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:09:01.081 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+10:09:01.258 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:09:01.259 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3649 ms
+10:09:01.607 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:09:01.694 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+10:09:01.952 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:09:02.147 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:09:02.614 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:09:02.661 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+10:09:03.612 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:09:03.622 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:09:04.372 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:09:04.419 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+10:09:05.456 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+10:09:05.685 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+10:09:05.726 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+10:09:05.916 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+10:09:05.923 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:09:05.963 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+10:09:05.964 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+10:09:06.379 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+10:09:06.387 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+10:09:06.399 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:09:06.407 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1661920746405 with initial instances count: 5
+10:09:06.410 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SIGNUP-MICROSERVICE with eureka with status UP
+10:09:06.411 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1661920746411, current=UP, previous=STARTING]
+10:09:06.414 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SIGNUP-MICROSERVICE/LTIN287456.cts.com:signup-microservice:8006: registering service...
+10:09:06.415 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8006"]
+10:09:06.444 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8006 (http) with context path ''
+10:09:06.445 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8006
+10:09:06.472 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SIGNUP-MICROSERVICE/LTIN287456.cts.com:signup-microservice:8006 - registration status: 204
+10:09:06.547 [restartedMain] INFO  c.c.s.SignupMicroserviceApplication - Started SignupMicroserviceApplication in 10.164 seconds (JVM running for 11.604)
+10:10:32.929 [http-nio-8006-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:10:32.930 [http-nio-8006-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:10:32.932 [http-nio-8006-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:10:33.554 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.addnewRequest
+10:10:33.555 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:10:56.387 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+10:10:56.387 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:10:56.640 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+10:10:56.641 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:11:52.690 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.addnewRequest
+10:11:52.691 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:12:04.914 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+10:12:04.915 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:12:05.181 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+10:12:05.182 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+10:14:05.978 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:19:05.979 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:24:05.991 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:29:06.004 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:34:06.014 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:39:06.018 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:44:06.025 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:49:06.033 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:55:52.093 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m18s656ms702µs400ns).
+10:58:54.693 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:03:54.699 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:08:54.713 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:13:54.716 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:18:54.733 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:21:53.534 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:21:53.534 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:21:53.770 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:21:53.771 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:22:57.166 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:22:57.167 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:22:57.439 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:22:57.439 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:23:31.623 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:23:31.623 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:23:31.832 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:23:31.832 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:23:48.660 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:23:48.660 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:23:48.911 [http-nio-8006-exec-9] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:23:48.911 [http-nio-8006-exec-9] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:23:54.740 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:24:07.689 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:07.691 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:24:07.961 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:07.961 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:24:22.604 [http-nio-8006-exec-3] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:22.604 [http-nio-8006-exec-3] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:24:22.775 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:22.775 [http-nio-8006-exec-4] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:24:27.620 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:27.620 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:24:27.872 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:24:27.872 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:28:54.744 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:29:27.464 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:29:27.465 [http-nio-8006-exec-8] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:29:27.672 [http-nio-8006-exec-9] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:29:27.672 [http-nio-8006-exec-9] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:30:53.591 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:30:53.591 [http-nio-8006-exec-1] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:30:53.822 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:30:53.823 [http-nio-8006-exec-2] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:33:54.753 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:35:43.980 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.addnewRequest
+11:35:43.980 [http-nio-8006-exec-5] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:35:53.717 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:35:53.717 [http-nio-8006-exec-6] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:35:53.934 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.service.impl.SignupServiceImpl.viewAllList
+11:35:53.934 [http-nio-8006-exec-7] INFO  c.c.signup.transactions.Logging - Called Application for com.cognizant.signup.controller.SignupController.signupRequest
+11:38:54.767 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:43:54.770 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:48:54.785 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:53:54.790 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:58:54.807 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:03:54.815 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

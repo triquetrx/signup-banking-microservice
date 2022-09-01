@@ -3,12 +3,15 @@ package com.cognizant.signup.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cognizant.signup.clients.AuthClient;
 import com.cognizant.signup.clients.CustomerClient;
 import com.cognizant.signup.dto.SignupRequestDTO;
+import com.cognizant.signup.exception.InvalidRequestException;
 import com.cognizant.signup.model.SignupRequest;
 import com.cognizant.signup.model.SignupResponse;
 import com.cognizant.signup.repository.SignupRequestRepository;
@@ -26,14 +29,26 @@ public class SignupServiceImpl implements SignupService{
 	private CustomerClient customerClient;
 
 	@Override
+	@Transactional
 	public SignupResponse addnewRequest(SignupRequestDTO requestDTO) {
 		String id = "REQ_" + repository.count();
 		repository.save(new SignupRequest(id, requestDTO.getName(), requestDTO.getEmail(), requestDTO.getPhoneNumber(),
 				requestDTO.getDateOfBirth(),requestDTO.getAddress1(), requestDTO.getAddress2(), requestDTO.getPanNumber(), false));
 		return new SignupResponse(id, "REQUEST_CREATED_SUCCESSFULLY");
 	}
+	
+	@Override
+	@Transactional
+	public SignupRequest trackRequestStatus(String requestId, String name) throws InvalidRequestException {
+		SignupRequest response = repository.findById(requestId).get();
+		if(response.getName().equalsIgnoreCase(name)) {
+			return response;
+		}
+		throw new InvalidRequestException("INVALID_TRACK");
+	}
 
 	@Override
+	@Transactional
 	public List<SignupRequest> viewAllList(String token) {
 		if (authClient.validatingToken(token).isValidStatus()
 				&& authClient.validatingToken(token).getUserRole().equalsIgnoreCase("ROLE_EMPLOYEE")) {
